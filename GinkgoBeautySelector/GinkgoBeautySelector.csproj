@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>Beauty.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Beauty.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Beauty.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.0" />
+    <!--<PackageReference Include="Yolov8.Net" Version="2.0.0" />-->
+    <PackageReference Include="WPF-UI" Version="4.0.3" />
+    <PackageReference Include="YoloDotNet" Version="3.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Beauty.png" />
+  </ItemGroup>
+
+</Project>
